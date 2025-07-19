@@ -290,7 +290,7 @@ main > section{
 }
 
 /* responsive for medium device */
-@media screen and (min-width: 576px) and (max-width: 1112px) {
+@media screen and (min-width: 576px) and (max-width: 1280px) {
     .teams, .features{
         flex-direction: column;
     }
