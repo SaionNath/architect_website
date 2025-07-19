@@ -33,8 +33,6 @@
     padding: 20px 25px;
     font-size: 1.01rem;
     font-weight: 600;
-    width: 11rem;
-    height: 4rem;
     border-radius: 8px;
     border: none;
 }
@@ -128,18 +126,23 @@ main > section{
 
 /* feature styles */
 .features{
-    gap: 2.88rem;
+    gap: 9.7rem;
 }
-#feature-section-title{
-    border-left: 5px soild rgb(14, 144, 255);
+
+#feature-section-title {
+    border-left: 5px solid rgb(14, 144, 255);
+    margin-top: 20px;
     padding-left: 20px;
 }
 
+.features-description{
+    margin: 20px 20px;
+}
 .feature-card{
     padding: 10px;
     box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .feature-title{
@@ -149,6 +152,21 @@ main > section{
     margin-bottom: 0px;
 }
 
+.feature-architect img{
+    width: 100%;
+}
+#experience-badge{
+    padding: 40px 45px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: -500px;
+    margin-left: -100px;
+}
+
+#experience-year{
+    font-size: 3.7rem;
+    font-weight: 700;
+}
 /* fact styles */
 .facts_container{
     display: grid;
@@ -198,11 +216,22 @@ main > section{
     filter: grayscale(100%);
     margin-top: 2.8rem;
 }
+
+/* footer styles */
+.footer {
+    text-align: center;
+    background-color: rgba(14, 144, 255, 0.1);
+    padding: 1rem;
+    margin: 150px auto 100px;
+    max-width: 70%;
+}
+
 /* responsive media */
 @media screen and (max-width: 576px){
     .navbar, 
     .nav-links,
-    .teams
+    .teams,
+    .features
     {
         flex-direction: column;
     }  
@@ -227,16 +256,26 @@ main > section{
     .fact-description{
         max-width: 70%;
     }
+
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
 }
 
 /* responsive for medium device */
 @media screen and (min-width: 576px) and (max-width: 1112px) {
-    .teams{
+    .teams, .features{
         flex-direction: column;
     }
 
     .our-features{
         margin-left: 50px;
+    }
+
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: auto;
     }
 
     .facts_container,
