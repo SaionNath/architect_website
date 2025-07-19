@@ -81,6 +81,14 @@ main > section{
 }
 
 /* banner styles */
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
 .banner-content{
     max-width: 60%;
     margin: 0 auto;
@@ -234,7 +242,25 @@ main > section{
     .features
     {
         flex-direction: column;
-    }  
+    } 
+    
+    .banner {
+    flex-direction: column;
+    text-align: center;
+    }
+
+    .banner-content {
+    max-width: 90%;
+    margin-bottom: 1rem;
+    }
+
+    .banner-title {
+    font-size: 2.2rem;
+    }
+
+    .banner-img {
+    width: 90%;
+    }
     
     .team-img-container,
     .facts_container,
