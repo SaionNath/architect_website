@@ -48,6 +48,10 @@ main > section{
     margin-top: 5.3rem;
 }
 
+#feature{
+    color: rgb(14, 144, 255);
+}
+
 .section-title{
     font-size: 2.4rem;
     font-weight: 700;
@@ -119,8 +123,37 @@ main > section{
     font-weight: 500;
 }
 
-#feature{
-    color: rgb(14, 144, 255);
+/* fact styles */
+.facts_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 7.75rem;
+}
+
+.fact-card{
+    border: 1px solid rgb(14, 144, 255);
+    border-radius: 8px;
+    height: 240px;
+    width: 240px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fact-value{
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.fact-name{
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.fact-description{
+    max-width: 540px;
 }
 /* responsive media */
 @media screen and (max-width: 576px){
